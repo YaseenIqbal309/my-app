@@ -2,7 +2,7 @@ import React from 'react'
 import  Logo from '../../assets/Logo.png'
 import NavLink from '../navlink/navlink.component'
 import CustomBtn from '../custombtn/custombtn.component' 
-
+import MobileNav from '../mobilenav/mobilenav.component'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
@@ -12,7 +12,8 @@ import { useState } from 'react'
 
 const  Header= ()=>{
 
-    
+    const [isOpen,setIsOpen] = useState(false);
+    const handleTrigger =() => setIsOpen(!isOpen);
    
 
     return (
@@ -32,15 +33,15 @@ const  Header= ()=>{
                         <CustomBtn SignIn>Sign In</CustomBtn>
                 
                 </ul>
-                <button className='toggle'>
+                <button className='toggle' onClick={handleTrigger}>
                     <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
-                  
+                   
                 </button>
 
 
             </div>
             <div className="mobile-view">
-               
+                <MobileNav  isOpen={isOpen}></MobileNav>
             
             </div>
    
