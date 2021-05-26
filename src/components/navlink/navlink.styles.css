@@ -1,0 +1,12 @@
+.option a{
+    text-decoration: none;
+    color: #4a4848;
+    font-size: 12px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-weight: 400;
+    line-height: 32px;
+}
+.option a:hover{
+    color: #3ac280;
+}

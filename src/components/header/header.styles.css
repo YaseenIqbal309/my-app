@@ -1,0 +1,50 @@
+.header{
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo-container img{
+    width: 217px;
+    height: 27px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.toggle{
+    display: none;
+    background: transparent;
+    border: none;
+}
+.options{
+    display: flex;
+    list-style-type: none;
+
+    
+}
+.mobile-options{
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    top: 8;
+    left: 40%;
+    height: 100%;
+    overflow: hidden;
+    visibility: hidden;
+    transition: visible 1s;
+
+}
+.mobile-visible{
+    visibility: visible;
+    transition: visible 1s;
+
+}
+@media (max-width:1200px){
+    .options{
+        display: none;
+    }
+    .toggle{
+        /* margin-top: 16px; */
+        display: block;
+    }
+}
