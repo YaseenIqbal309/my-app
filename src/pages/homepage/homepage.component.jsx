@@ -4,6 +4,7 @@ import Container from '../../components/container/container.component'
 import ImgComare from  '../../components/imagecompare/imagecompare.component'
 import './homepage.styles.css'
 import Title from '../../components/title/title.component'
+import CustomBtn from '../../components/custombtn/custombtn.component'
 
 
 const HomePage = () => (
@@ -22,6 +23,10 @@ const HomePage = () => (
                      </div>
             </div>
             <ImgComare></ImgComare>
+            <div className="try-btn text-center">
+                    <CustomBtn>Try it Today</CustomBtn>
+            </div>
+           
          </Container>
          
       

@@ -7,6 +7,9 @@
    
     line-height: 34px;
 }
+.text-center{
+    text-align: center;
+}
 .wid-parent{
     width: inherit;
 
@@ -28,10 +31,13 @@
 }
 @media (min-width: 768px){
     .col-md-6 {
-        -ms-flex: 0 0 50%;
+        /* -ms-flex: 0 0 50%;
         -webkit-box-flex: 0;
-        flex: 0 0 50%;
+        flex: 0 0 50%; */
         max-width: 50%;
+    }
+    .title_description{
+        padding-top: 19%;
     }
 }
 @media screen  and (max-width: 768px){
@@ -42,8 +48,8 @@
     justify-content: center;
 }
 .col-sm-12{
-    -webkit-box-flex: 0;
-    flex: 0 0 100%;
+    /* -webkit-box-flex: 0; */
+    /* flex: 0 0 100%; */
     max-width: 100%;
    
 }

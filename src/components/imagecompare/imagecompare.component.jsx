@@ -9,8 +9,8 @@ import './imagecompare.styles.css'
 const  ImgComare = () => {
             return (
             <ImgComparisonSlider class="slider-with-custom-handle">
-            <img slot="before" width="100%" src={comp1}></img>
-            <img slot="after" width="100%" src={comp2}></img>
+            <img slot="before" width="100%" src={comp2}></img>
+            <img slot="after" width="100%" src={comp1}></img>
             <img slot="handle" class="custom-handle" src={arrows}></img>
             </ImgComparisonSlider>
             )
