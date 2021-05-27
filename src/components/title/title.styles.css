@@ -1,0 +1,26 @@
+.section-title{
+    background-image: url(../../assets/download.png);
+    background-size: 200px 200px ;
+    background-repeat: no-repeat;
+    padding-top: 21%;
+    padding-left: 17%;
+    background-position: 0 16px;
+    font-family: Museo Sans Rounded\ 500,Helvetica,Arial,Sans-Serif;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 58px;
+    letter-spacing: 0;
+
+}
+
+@media screen  and (max-width: 768px){
+
+ .section-title {
+    padding: 25% 7%;
+    text-align: center;
+    background-position: 50%;
+    font-size: 28px;
+    line-height: 32px;
+    margin: 5% 0;
+}
+}
