@@ -21,7 +21,7 @@ const HomePage = () => (
                         </p>
                      </div>
             </div>
-            
+            <ImgComare></ImgComare>
          </Container>
          
       

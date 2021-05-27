@@ -1,0 +1,9 @@
+.slider-with-custom-handle {
+    
+    --handle-opacity: 1;
+    --handle-opacity-active: 1;
+    --divider-width: 2px;
+    --divider-color: #3ac280;
+  }
+
+ 
