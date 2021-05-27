@@ -10,3 +10,17 @@
 .option a:hover{
     color: #3ac280;
 }
+@media (max-width:1200px){
+    .options{
+        display: none;
+    }
+    .toggle{
+        /* margin-top: 16px; */
+        display: block;
+    }
+}
+@media (min-width:1050px)  {
+    .option a{
+        color: white;
+    }
+}

@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import  Logo from '../../assets/Logo.png'
 import NavLink from '../navlink/navlink.component'
 import CustomBtn from '../custombtn/custombtn.component' 
 import MobileNav from '../mobilenav/mobilenav.component'
+import Video from '../video/video.component'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
+
+
+
 
 
 import './header.styles.css'
@@ -14,11 +18,16 @@ const  Header= ()=>{
 
     const [isOpen,setIsOpen] = useState(false);
     const handleTrigger =() => setIsOpen(!isOpen);
-   
-
+    const [scroll,setScroll] = useState(false);
+    useEffect (()=> {
+        window.addEventListener('scroll',()=>{
+            setScroll(window.scrollY >60 );
+        });
+    },[]);
+    
     return (
-        <div className="both">
-             <div className='header'>
+        <div className="Navbar">
+             <div className={`header ${scroll ? 'scroll':''}`}>
                 <div className="logo-container">
                 <img src={Logo} alt="" />
                 </div>
@@ -44,7 +53,9 @@ const  Header= ()=>{
                 <MobileNav  isOpen={isOpen}></MobileNav>
             
             </div>
-   
+           
+            
+            
         </div>
         );
 }

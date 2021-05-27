@@ -1,8 +1,19 @@
 .header{
     display: flex;
     justify-content: space-around;
+    position: fixed;
+    z-index: 999999999;
+    width: 100%;
+    background: white;
 }
 
+.mobile-view{
+    position: fixed;
+    z-index: 99999999999;
+    background: white;
+    width: 100%;
+    top: 15%;
+}
 .logo-container img{
     width: 217px;
     height: 27px;
@@ -20,25 +31,6 @@
 
     
 }
-.mobile-options{
-    display: flex;
-    list-style-type: none;
-    flex-direction: column;
-    position: absolute;
-    align-items: center;
-    top: 8;
-    left: 40%;
-    height: 100%;
-    overflow: hidden;
-    visibility: hidden;
-    transition: visible 1s;
-
-}
-.mobile-visible{
-    visibility: visible;
-    transition: visible 1s;
-
-}
 @media (max-width:1200px){
     .options{
         display: none;
@@ -47,4 +39,23 @@
         /* margin-top: 16px; */
         display: block;
     }
+}
+@media (min-width:1050px)  {
+    .header{
+        position: fixed;
+        z-index: 99999999999;
+        background: transparent;
+        
+    }
+    
+    .mobile-view{
+        position: fixed;
+        z-index: 99999999999;
+        color: white;
+        width: 100%;
+        top: 11%;
+        background: transparent;
+    }
+    
+    
 }

@@ -1,6 +1,6 @@
 
 .mobile-options{
-    display: flex;
+    display: none;
     list-style-type: none;
     flex-direction: column;
     
@@ -14,7 +14,13 @@
 
 }
 .mobile-visible{
+    display: flex;
     visibility: visible;
     transition: visible 1s;
 
+}
+@media (min-width:1050px)  {
+    .option a{
+        color: white;
+    }
 }
