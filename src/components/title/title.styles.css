@@ -12,7 +12,19 @@
     letter-spacing: 0;
 
 }
-
+.section-title-center{
+    background-image: url(../../assets/download.png);
+    background-size: 200px 200px ;
+    background-repeat: no-repeat;
+    font-family: Museo Sans Rounded\ 500,Helvetica,Arial,Sans-Serif;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 58px;
+    letter-spacing: 0;
+    text-align: center;
+    background-position: 50%;
+    padding: 12%;
+}   
 @media screen  and (max-width: 768px){
 
  .section-title {
@@ -22,5 +34,10 @@
     font-size: 28px;
     line-height: 32px;
     margin: 5% 0;
+}
+.section-title-center{
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
 }
 }

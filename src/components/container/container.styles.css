@@ -1,9 +1,14 @@
-.container {
+/* .container {
     
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+  }
+  @media (max-width:540px){
+    .container, .container-sm {
+      max-width: 540px;
+  }
   }
   @media (min-width: 768px) {
     .container {
@@ -20,4 +25,4 @@
       max-width: 1140px;
     }
   }
-  
+   */

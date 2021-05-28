@@ -7,8 +7,13 @@
    
     line-height: 34px;
 }
-.text-center{
-    text-align: center;
+
+.text-black-hover{
+    color: black;
+}
+.text-black-hover:hover{
+    text-decoration: underline !important;
+    color: black;
 }
 .wid-parent{
     width: inherit;
@@ -28,6 +33,35 @@
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.data-points .data-point-item .data-number {
+    background-image: url('../../assets/download\ \(1\).png');
+    background-repeat: no-repeat;
+    text-align: left;
+    background-position: bottom;
+    font-weight: 700;
+    font-size: 167px;
+    line-height: 87px;
+    letter-spacing: 0;
+    color: #0a5169;
+    opacity: 1;
+    min-height: 143px;
+}
+.data-points .data-point-item .data-text {
+    text-align: left;
+    font-size: 12px;
+    line-height: 21px;
+    letter-spacing: -.14px;
+    color: #000;
+    opacity: 1;
+}
+@media (max-width:1024px){
+    .data-points .data-point-item .data-number{
+        background-size: 100%;
+        font-size: 100px !important;
+        line-height: 120px;
+    }
 }
 @media (min-width: 768px){
     .col-md-6 {
@@ -53,6 +87,11 @@
     max-width: 100%;
    
 }
+.data-points .data-point-item .data-number{
+    text-align: center;
+    background-position: 55% 0;
+}
+
 }
 @media (min-width: 401px) and (max-width: 768px){
 
